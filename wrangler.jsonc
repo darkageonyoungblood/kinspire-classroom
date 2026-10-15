@@ -1,0 +1,25 @@
+{
+  "name": "kinspire-classroom",
+  "main": "src/index.js",
+  "compatibility_date": "2026-09-01",
+
+  // Images only. The client page is embedded in the Worker, so there is no
+  // index.html here and every non-asset path falls through to the Worker.
+  "assets": {
+    "directory": "./public"
+  },
+
+  "durable_objects": {
+    "bindings": [
+      { "name": "ROOM", "class_name": "Room" },
+      { "name": "BOARD", "class_name": "Board" }
+    ]
+  },
+
+  "migrations": [
+    { "tag": "v1", "new_sqlite_classes": ["Room"] },
+    { "tag": "v2", "new_sqlite_classes": ["Board"] }
+  ],
+
+  "observability": { "enabled": true }
+}

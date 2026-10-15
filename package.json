@@ -5,9 +5,7 @@
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
-    "e2e": "node e2e.mjs",
-    "e2e:board": "node e2e_board.mjs",
-    "e2e:flow": "node e2e_flow.mjs"
+    "e2e": "node e2e.mjs"
   },
   "devDependencies": {
     "wrangler": "^4"

@@ -1,13 +1,10 @@
 {
   "name": "kinspire-classroom",
-  "main": "src/index.js",
+  "main": "index.js",
   "compatibility_date": "2026-09-01",
 
-  // Images only. The client page is embedded in the Worker, so there is no
-  // index.html here and every non-asset path falls through to the Worker.
-  "assets": {
-    "directory": "./public"
-  },
+  // Everything is inside the Worker, including the one image, so there is no
+  // assets directory and no folders anywhere. Six files, all side by side.
 
   "durable_objects": {
     "bindings": [

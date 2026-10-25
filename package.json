@@ -1,0 +1,13 @@
+{
+  "name": "kinspire-classroom",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "e2e": "node e2e.mjs"
+  },
+  "devDependencies": {
+    "wrangler": "^4"
+  }
+}
